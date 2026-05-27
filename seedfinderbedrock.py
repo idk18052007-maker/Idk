@@ -295,10 +295,10 @@ def save_results(results: List[SeedResult], filename: str = "seeds_found.json"):
 
 def main():
     """Example usage"""
-    # Define search filters
+    # Define search filters - ПРАВИЛЬНО!
     filters = SeedFilter(
-        biomes=[Biome.DESERT, Biome.VILLAGE],
-        structures=[Structure.VILLAGE, Structure.DESERT_TEMPLE],
+        biomes=[Biome.DESERT, Biome.PLAINS],  # ← Только биомы!
+        structures=[Structure.VILLAGE, Structure.DESERT_TEMPLE],  # ← Только структуры!
         search_radius=5000,
         center_x=0,
         center_z=0
